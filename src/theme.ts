@@ -21,15 +21,16 @@ const { definePartsStyle: tabsParts, defineMultiStyleConfig: tabsConfig } =
 
 export const theme = extendTheme({
   fonts: {
-    heading: `'Satoshi-Medium', sans-serif`,
-    body: `'Satoshi-Medium', sans-serif`,
+    heading: `'Rajdhani', sans-serif`,
+    body: `'Rajdhani', sans-serif`,
   },
   styles: {
     global: {
       'html, body': {
-        backgroundColor: '#1a1a27',
+        backgroundColor: '#001322',
         color: '#fafafd',
         fontSize: '16px',
+        fontWeight: 600,
       },
     },
   },
@@ -39,30 +40,41 @@ export const theme = extendTheme({
         solid: defineStyle({
           fontWeight: 500,
           borderRadius: '0.5rem',
-          bg: '#6966ff',
+          bg: '#003764',
           color: '#fafafd',
           _hover: {
-            bg: '#6966ff',
+            bg: '#003764',
             color: '#fafafd',
             filter: 'brightness(1.1)',
           },
         }),
         secondary: defineStyle({
-          bg: '#393953',
+          bg: '#002e54',
           borderRadius: '0.5rem',
           color: '#fafafd',
           _hover: {
-            bg: '#393953',
+            bg: '#002e54',
             color: '#fafafd',
             filter: 'brightness(1.1)',
           },
         }),
+        outline: defineStyle({
+          borderRadius: '0.5rem',
+          color: '#fafafd',
+          _hover: {
+            color: '#001322',
+            bg: '#fafafd',
+            filter: 'brightness(1.1)',
+          },
+        }),
+
+
       },
     }),
     Card: cardConfig({
       baseStyle: cardParts({
         container: {
-          bg: '#151522',
+          bg: '#00223e',
           color: '#fafafd',
           borderRadius: '0.75rem',
           padding: '20px 24px',
@@ -117,18 +129,18 @@ export const theme = extendTheme({
             fontSize: '1.063rem',
             fontWeight: 500,
             borderRadius: '0.5rem',
-            color: '#807e98',
+            color: '#0071ce',
             marginRight: '0.5rem',
             _hover: {
               color: '#fafafd',
-              backgroundColor: '#232334',
+              backgroundColor: '#00223e',
             },
             _selected: {
               color: '#fafafd',
-              bg: '#393953',
+              bg: '#002e54',
               _hover: {
                 color: '#fafafd',
-                bg: '#393953',
+                bg: '#002e54',
                 filter: 'brightness(1.1)',
               },
             },
@@ -142,18 +154,18 @@ export const theme = extendTheme({
             fontSize: '1.063rem',
             fontWeight: 500,
             borderRadius: '0.5rem',
-            color: '#807e98',
+            color: '#0071ce',
             marginRight: '0.5rem',
             _hover: {
               color: '#fafafd',
-              backgroundColor: '#232334',
+              backgroundColor: '#00223e',
             },
             _selected: {
               color: '#fafafd',
-              bg: '#151522',
+              bg: '#001322',
               _hover: {
                 color: '#fafafd',
-                bg: '#151522',
+                bg: '#001322',
                 filter: 'brightness(1.1)',
               },
             },

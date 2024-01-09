@@ -25,22 +25,7 @@ import { ArrowBackIcon } from '@chakra-ui/icons';
 export function Financials() {
   return (
     <>
-      <HStack
-        spacing={4}
-        mb={2}
-        justifyContent="center"
-        alignItems="center"
-        backgroundColor="#232334"
-        borderBottom="solid 1px #2d2d3d"
-        fontSize="0.8125rem"
-        color="#c8c7d8"
-        p={3}
-      >
-        <Text>
-          Interested in bridging your DYDX tokens from Ethereum to dYdX Chain?
-        </Text>
-        <Button size="sm">Migrate</Button>
-      </HStack>
+
       <Container maxW="6xl" py={4}>
         <HStack as="header" spacing={4} mb={10} justifyContent="space-between">
           <Logo />
@@ -48,32 +33,22 @@ export function Financials() {
             <Hide below="md">
               <Tabs variant="menu">
                 <TabList>
-                  <Tab>Dashboard</Tab>
-                  <Tab>Migrate</Tab>
-                  <Tab>History</Tab>
-                  <Tab>Forums</Tab>
-                  <Tab>Trade</Tab>
+                  <Tab>ABOUT</Tab>
+                  <Tab>MEET THE PARTNERS</Tab>
+                  <Tab>CAREERS</Tab>
                 </TabList>
               </Tabs>
             </Hide>
-            <Button>Connect</Button>
+            <Button variant='outline' color='white'>CONTACT US</Button>
           </HStack>
         </HStack>
         <HStack spacing={4} alignItems="center" mb={12}>
-          <IconButton
-            isRound
-            variant="secondary"
-            aria-label="Back"
-            icon={<ArrowBackIcon />}
-          />
+
           <VStack alignItems="flex-start" spacing={0}>
-            <Text as="small" color="#807e98" m={0}>
-              FINANCES
-            </Text>
             <Heading size="md" mb={1}>
               Financials
             </Heading>
-            <Text color="#807e98">
+            <Text color="#0071ce">
               Providing full transparency on all our finances
             </Text>
           </VStack>
@@ -91,7 +66,7 @@ export function Financials() {
                     <CardHeader>Total Assets</CardHeader>
                     <CardBody>
                       <Stat>
-                        <StatNumber>$13,896.06</StatNumber>
+                        <StatNumber>$13,896 M</StatNumber>
                       </Stat>
                     </CardBody>
                   </Card>
@@ -99,7 +74,7 @@ export function Financials() {
                     <CardHeader>Total Liabilities and Equity</CardHeader>
                     <CardBody>
                       <Stat>
-                        <StatNumber>$13,896.06</StatNumber>
+                        <StatNumber>$13,896 M</StatNumber>
                       </Stat>
                     </CardBody>
                   </Card>
@@ -115,7 +90,7 @@ export function Financials() {
                     <CardHeader>Total Revenue</CardHeader>
                     <CardBody>
                       <Stat>
-                        <StatNumber>$13,896.06</StatNumber>
+                        <StatNumber>$13,896 M</StatNumber>
                       </Stat>
                     </CardBody>
                   </Card>
@@ -123,7 +98,7 @@ export function Financials() {
                     <CardHeader>Total Expenses</CardHeader>
                     <CardBody>
                       <Stat>
-                        <StatNumber>$13,896.06</StatNumber>
+                        <StatNumber>$13,896 M</StatNumber>
                       </Stat>
                     </CardBody>
                   </Card>
@@ -131,7 +106,7 @@ export function Financials() {
                     <CardHeader>Net Profit/Loss</CardHeader>
                     <CardBody>
                       <Stat>
-                        <StatNumber>$13,896.06</StatNumber>
+                        <StatNumber>$13,896 M</StatNumber>
                       </Stat>
                     </CardBody>
                   </Card>

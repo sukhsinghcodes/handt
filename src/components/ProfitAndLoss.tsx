@@ -28,8 +28,8 @@ export function ProfitAndLoss() {
                 Revenue
               </Heading>
             </Td>
-            <Td />
-            <Td />
+            <Td isNumeric  color="#807e98">$ M</Td>
+            <Td isNumeric  color="#807e98">$ M</Td>
           </Tr>
           <Tr color="#807e98">
             <Td pl={12}>
