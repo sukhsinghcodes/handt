@@ -7,7 +7,6 @@ import {
   HStack,
   Heading,
   Hide,
-  IconButton,
   SimpleGrid,
   Stat,
   StatNumber,
@@ -20,7 +19,6 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { BalanceSheet, Logo, ProfitAndLoss } from './components';
-import { ArrowBackIcon } from '@chakra-ui/icons';
 
 export function Financials() {
   return (
